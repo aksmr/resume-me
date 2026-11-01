@@ -15,8 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const age = calculateAge();
   const ageHero = document.getElementById('age-hero');
   const ageInfo = document.getElementById('age-info');
+  const ageRangeMin = document.getElementById('age-range-min');
+  const ageRangeMax = document.getElementById('age-range-max');
   if (ageHero) ageHero.textContent = age + ' ans';
   if (ageInfo) ageInfo.textContent = age + ' ans';
+  if (ageRangeMin) ageRangeMin.textContent = age - 4;
+  if (ageRangeMax) ageRangeMax.textContent = age + 1;
 });
 
 const sections = document.querySelectorAll('.section');
