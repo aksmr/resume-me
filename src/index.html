@@ -3,85 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Biodata – AK. Simon</title>
+<title id="page-title" data-i18n="page.title">Biodata – AK. Simon</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Noto+Sans+Bengali:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <section class="hero">
   <div class="hero-left">
-    <a class="hero-photo-link" href="img/halouf_sous_costume.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la photo en grand">
+    <a class="hero-photo-link" href="img/halouf_sous_costume.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la photo en grand" data-i18n-aria-label="photo.open">
       <img class="hero-photo" src="img/halouf_sous_costume.jpg" alt="ABUL KALAM Simon">
     </a>
-    <div class="hero-photo-controls" role="group" aria-label="Commandes du diaporama">
-      <button class="hero-photo-control" id="photo-previous" type="button" aria-label="Photo précédente">
+    <div class="hero-photo-controls" role="group" aria-label="Commandes du diaporama" data-i18n-aria-label="photo.controls">
+      <button class="hero-photo-control" id="photo-previous" type="button" aria-label="Photo précédente" data-i18n-aria-label="photo.previous">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
       </button>
-      <button class="hero-photo-control" id="photo-next" type="button" aria-label="Photo suivante">
+      <button class="hero-photo-control" id="photo-next" type="button" aria-label="Photo suivante" data-i18n-aria-label="photo.next">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
       </button>
     </div>
     <span class="hero-photo-count" id="photo-count" aria-live="polite">1 / 6</span>
     <span class="hero-photo-hint" aria-hidden="true">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4M11 8v6M8 11h6"/></svg>
-      Agrandir
+      <span data-i18n="photo.enlarge">Agrandir</span>
     </span>
     <div class="hero-caption">
       <span class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
       <h1 class="hero-name">
-        <span>Biodata de mariage</span>
+        <span data-i18n="hero.title">Biodata de mariage</span>
         ABUL KALAM<br>Simon
       </h1>
     </div>
   </div>
 
   <div class="hero-right">
+    <button class="language-toggle" id="language-toggle" type="button" aria-label="Afficher le biodata en bengali">বাংলায় পড়ুন</button>
     <div class="ornament">❧</div>
-    <p class="tagline">Ingénieur passionné,<br>croyant sincère,<br>en quête de sa moitié.</p>
+    <p class="tagline"><span data-i18n="hero.tagline1">Ingénieur passionné,</span><br><span data-i18n="hero.tagline2">croyant sincère,</span><br><span data-i18n="hero.tagline3">en quête de sa moitié.</span></p>
     <div class="quick-stats">
-      <div class="stat" style="--i:0"><span class="stat-val" id="age-hero">26 ans</span><span class="stat-lbl">Né le 03/01/2000</span></div>
-      <div class="stat" style="--i:1"><span class="stat-val">Saint-Denis</span><span class="stat-lbl">France</span></div>
-      <div class="stat" style="--i:2"><span class="stat-val">Ingénieur</span><span class="stat-lbl">Data Engineer · BAC+5</span></div>
-      <div class="stat" style="--i:3"><span class="stat-val">Sunnite</span><span class="stat-lbl">Pratiquant régulier</span></div>
+      <div class="stat" style="--i:0"><span class="stat-val" id="age-hero">26 ans</span><span class="stat-lbl" data-i18n="hero.birthdate">Né le 03/01/2000</span></div>
+      <div class="stat" style="--i:1"><span class="stat-val">Saint-Denis</span><span class="stat-lbl" data-i18n="hero.country">France</span></div>
+      <div class="stat" style="--i:2"><span class="stat-val" data-i18n="hero.job">Ingénieur</span><span class="stat-lbl">Data Engineer · BAC+5</span></div>
+      <div class="stat" style="--i:3"><span class="stat-val" data-i18n="hero.faith">Sunnite</span><span class="stat-lbl" data-i18n="hero.practice">Pratiquant régulier</span></div>
     </div>
     <a class="scroll-hint" href="#about">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Découvrir le profil
+      <span data-i18n="hero.scroll">Découvrir le profil</span>
     </a>
   </div>
 </section>
 
-<nav class="table-of-contents" aria-label="Table des matières">
-  <h2 class="toc-title">Sommaire</h2>
+<nav class="table-of-contents" aria-label="Table des matières" data-i18n-aria-label="toc.label">
+  <h2 class="toc-title" data-i18n="toc.title">Sommaire</h2>
   <ol class="toc-list">
-    <li><a href="#about">Informations personnelles</a></li>
-    <li><a href="#family">Famille</a></li>
-    <li><a href="#education">Éducation &amp; Carrière</a></li>
-    <li><a href="#religion">Pratique religieuse</a></li>
-    <li><a href="#personality">Personnalité &amp; Vision du Foyer</a></li>
-    <li><a href="#lifestyle">Style de Vie &amp; Passions</a></li>
-    <li><a href="#search">Ce que je recherche</a></li>
+    <li><a href="#about" data-i18n="section.about">Informations personnelles</a></li>
+    <li><a href="#family" data-i18n="section.family">Famille</a></li>
+    <li><a href="#education" data-i18n="section.education">Éducation &amp; Carrière</a></li>
+    <li><a href="#religion" data-i18n="section.religion">Pratique religieuse</a></li>
+    <li><a href="#personality" data-i18n="section.personality">Personnalité &amp; Vision du Foyer</a></li>
+    <li><a href="#lifestyle" data-i18n="section.lifestyle">Style de Vie &amp; Passions</a></li>
+    <li><a href="#search" data-i18n="section.search">Ce que je recherche</a></li>
   </ol>
 </nav>
 
 <div id="about" class="section">
   <div class="section-label">
     <span class="section-num">01</span>
-    <h2 class="section-title">Informations Personnelles</h2>
+    <h2 class="section-title" data-i18n="section.about">Informations Personnelles</h2>
   </div>
   <div class="card-grid">
-    <div class="card"><div class="card-key">Nom complet</div><div class="card-val">ABUL KALAM Simon</div></div>
-    <div class="card"><div class="card-key">Date de naissance</div><div class="card-val">3 janvier 2000 · <span id="age-info">26 ans</span></div></div>
-    <div class="card"><div class="card-key">Lieu de naissance</div><div class="card-val">Saint-Denis, France</div></div>
-    <div class="card"><div class="card-key">Lieu de résidence</div><div class="card-val">Saint-Denis, France</div></div>
-    <div class="card"><div class="card-key">Nationalité</div><div class="card-val">Française</div></div>
-    <div class="card"><div class="card-key">Origine</div><div class="card-val">Bangladaise · <a href="https://maps.app.goo.gl/kpJrWLdQpsY4ca5w8" target="_blank" rel="noopener noreferrer">Hasnabad</a></div></div>
-    <div class="card"><div class="card-key">Situation</div><div class="card-val">Célibataire</div></div>
-    <div class="card"><div class="card-key">Taille &amp; Poids</div><div class="card-val">173 cm · 71 kg</div></div>
+    <div class="card"><div class="card-key" data-i18n="personal.fullname.label">Nom complet</div><div class="card-val">ABUL KALAM Simon</div></div>
+    <div class="card"><div class="card-key" data-i18n="personal.birthdate.label">Date de naissance</div><div class="card-val"><span data-i18n="personal.birthdate">3 janvier 2000 · </span><span id="age-info">26 ans</span></div></div>
+    <div class="card"><div class="card-key" data-i18n="personal.birthplace.label">Lieu de naissance</div><div class="card-val">Saint-Denis, <span data-i18n="personal.france">France</span></div></div>
+    <div class="card"><div class="card-key" data-i18n="personal.residence.label">Lieu de résidence</div><div class="card-val">Saint-Denis, <span data-i18n="personal.france">France</span></div></div>
+    <div class="card"><div class="card-key" data-i18n="personal.nationality.label">Nationalité</div><div class="card-val" data-i18n="personal.nationality">Française</div></div>
+    <div class="card"><div class="card-key" data-i18n="personal.origin.label">Origine</div><div class="card-val"><span data-i18n="personal.origin">Bangladaise · </span><a href="https://maps.app.goo.gl/kpJrWLdQpsY4ca5w8" target="_blank" rel="noopener noreferrer" data-i18n="personal.city">Hasnabad</a></div></div>
+    <div class="card"><div class="card-key" data-i18n="personal.status.label">Situation</div><div class="card-val" data-i18n="personal.status">Célibataire</div></div>
+    <div class="card"><div class="card-key" data-i18n="personal.height.label">Taille &amp; Poids</div><div class="card-val" data-i18n="personal.height">173 cm · 71 kg</div></div>
   </div>
 </div>
 
@@ -90,12 +91,12 @@
 <div id="family" class="section">
   <div class="section-label">
     <span class="section-num">02</span>
-    <h2 class="section-title">Famille</h2>
+    <h2 class="section-title" data-i18n="section.family">Famille</h2>
   </div>
   <div class="card-grid">
-    <div class="card"><div class="card-key">Père</div><div class="card-val">ABUL KALAM Ashad (vivant) · Retraité</div></div>
-    <div class="card"><div class="card-key">Mère</div><div class="card-val">ABUL KALAM Nahar (vivante) · Au foyer</div></div>
-    <div class="card"><div class="card-key">Fratrie</div><div class="card-val">1 sœur aînée, mariée (restauration) <br /> 1 frère cadet, célibataire (chef de projet en banque)</div></div>
+    <div class="card"><div class="card-key" data-i18n="family.father.label">Père</div><div class="card-val"><span>ABUL KALAM Ashad</span> <span data-i18n="family.alive"> (vivant)</span> · <span data-i18n="family.retired">Retraité</span></div></div>
+    <div class="card"><div class="card-key" data-i18n="family.mother.label">Mère</div><div class="card-val"><span>ABUL KALAM Nahar</span> <span data-i18n="family.alive.feminine"> (vivante)</span> · <span data-i18n="family.homemaker">Au foyer</span></div></div>
+    <div class="card"><div class="card-key" data-i18n="family.siblings.label">Fratrie</div><div class="card-val"><span data-i18n="family.sister">1 sœur aînée, mariée (restauration)</span><br /><span data-i18n="family.brother">1 frère cadet, célibataire (chef de projet en banque)</span></div></div>
   </div>
 </div>
 
@@ -104,13 +105,13 @@
 <div id="education" class="section">
   <div class="section-label">
     <span class="section-num">03</span>
-    <h2 class="section-title">Éducation &amp; Carrière</h2>
+    <h2 class="section-title" data-i18n="section.education">Éducation &amp; Carrière</h2>
   </div>
   <div class="card-grid">
-    <div class="card"><div class="card-key">Diplôme</div><div class="card-val">BAC+5 · Diplôme d'Ingénieur</div></div>
-    <div class="card"><div class="card-key">Spécialité</div><div class="card-val">Computer Science · Big Data</div></div>
-    <div class="card"><div class="card-key">Profession</div><div class="card-val">Data Engineer</div></div>
-    <div class="card"><div class="card-key">Situation financière</div><div class="card-val">Très stable (Ingénieur)</div></div>
+    <div class="card"><div class="card-key" data-i18n="education.degree.label">Diplôme</div><div class="card-val" data-i18n="education.degree">BAC+5 · Diplôme d'Ingénieur</div></div>
+    <div class="card"><div class="card-key" data-i18n="education.specialty.label">Spécialité</div><div class="card-val" data-i18n="education.specialty">Computer Science · Big Data</div></div>
+    <div class="card"><div class="card-key" data-i18n="education.profession.label">Profession</div><div class="card-val">Data Engineer</div></div>
+    <div class="card"><div class="card-key" data-i18n="education.finances.label">Situation financière</div><div class="card-val" data-i18n="education.finances">Très stable (Ingénieur)</div></div>
   </div>
 </div>
 
@@ -119,17 +120,17 @@
 <div id="religion" class="section">
   <div class="section-label">
     <span class="section-num">04</span>
-    <h2 class="section-title">Pratique Religieuse</h2>
+    <h2 class="section-title" data-i18n="section.religion">Pratique Religieuse</h2>
   </div>
   <div class="card-grid">
-    <div class="card"><div class="card-key">Madhab</div><div class="card-val">Malikite (ouvert aux autres écoles)</div></div>
-    <div class="card"><div class="card-key">Pratique au quotidien</div><div class="card-val">Assiduité à la prière, jeûne du Ramadan, et acquittement de la Zakat. Le Hajj est un objectif à réaliser.</div></div>
-    <div class="card"><div class="card-key">À la mosquée</div><div class="card-val">Salat al-Jumu'ah & at-Tarawih à la mosquée</div></div>
-    <div class="card"><div class="card-key">Alimentation</div><div class="card-val">Consommation strictement Halal</div></div>
-    <div class="card"><div class="card-key">Sciences islamiques</div><div class="card-val">Cursus d'études complet en cours dans une <a href="https://www.oussoul-eddine.fr/" target="_blank" rel="noopener noreferrer">institut</a><br />(Fiqh, 'Aqida, Sira, Coran)</div></div>
+    <div class="card"><div class="card-key" data-i18n="religion.school.label">Madhab</div><div class="card-val" data-i18n="religion.school">Malikite (ouvert aux autres écoles)</div></div>
+    <div class="card"><div class="card-key" data-i18n="religion.daily.label">Pratique au quotidien</div><div class="card-val" data-i18n="religion.daily">Assiduité à la prière, jeûne du Ramadan, et acquittement de la Zakat. Le Hajj est un objectif à réaliser.</div></div>
+    <div class="card"><div class="card-key" data-i18n="religion.mosque.label">À la mosquée</div><div class="card-val" data-i18n="religion.mosque">Salat al-Jumu'ah & at-Tarawih à la mosquée</div></div>
+    <div class="card"><div class="card-key" data-i18n="religion.food.label">Alimentation</div><div class="card-val" data-i18n="religion.food">Consommation strictement Halal</div></div>
+    <div class="card"><div class="card-key" data-i18n="religion.studies.label">Sciences islamiques</div><div class="card-val"><span data-i18n="religion.studies">Cursus d'études complet en cours dans une </span><a href="https://www.oussoul-eddine.fr/" target="_blank" rel="noopener noreferrer" data-i18n="religion.institute">institut</a><br />(Fiqh, 'Aqida, Sira, <span data-i18n="religion.quran">Coran</span>)</div></div>
   </div>
   <div class="quote-block">
-    « Je suis une personne qui admet ne pas tout connaître, qui accepte de se tromper, et qui cherche chaque jour à s'améliorer et à être meilleure. »
+    <span data-i18n="religion.quote">« Je suis une personne qui admet ne pas tout connaître, qui accepte de se tromper, et qui cherche chaque jour à s'améliorer et à être meilleure. »</span>
   </div>
 </div>
 
@@ -138,24 +139,24 @@
 <div id="personality" class="section">
   <div class="section-label">
     <span class="section-num">05</span>
-    <h2 class="section-title">Personnalité &amp; Vision du Foyer</h2>
+    <h2 class="section-title" data-i18n="section.personality">Personnalité &amp; Vision du Foyer</h2>
   </div>
   <div class="card-grid">
     <div class="card">
-      <div class="card-key">Traits de caractère</div>
-      <div class="card-val">Calme · Souriant · Organisé · Logique</div>
+      <div class="card-key" data-i18n="personality.traits.label">Traits de caractère</div>
+      <div class="card-val" data-i18n="personality.traits">Calme · Souriant · Organisé · Logique</div>
     </div>
     <div class="card">
-      <div class="card-key">Sociabilité</div>
-      <div class="card-val">Introverti · Plus à l'aise en petit comité · Je m'ouvre quand la confiance s'installe</div>
+      <div class="card-key" data-i18n="personality.sociability.label">Sociabilité</div>
+      <div class="card-val" data-i18n="personality.sociability">Introverti · Plus à l'aise en petit comité · Je m'ouvre quand la confiance s'installe</div>
     </div>
     <div class="card">
-      <div class="card-key">Ce que j'apporte</div>
-      <div class="card-val">Sécurité affective · Soutien fiable au quotidien · Preuve d'écoute</div>
+      <div class="card-key" data-i18n="personality.offer.label">Ce que j'apporte</div>
+      <div class="card-val" data-i18n="personality.offer">Sécurité affective · Soutien fiable au quotidien · Preuve d'écoute</div>
     </div>
     <div class="card">
-      <div class="card-key">Communication &amp; désaccords</div>
-      <div class="card-val">Écoute mutuelle · Exprimer nos points de vue sans hausser le ton</div>
+      <div class="card-key" data-i18n="personality.communication.label">Communication &amp; désaccords</div>
+      <div class="card-val" data-i18n="personality.communication">Écoute mutuelle · Exprimer nos points de vue sans hausser le ton</div>
     </div>
   </div>
 </div>
@@ -165,28 +166,28 @@
 <div id="lifestyle" class="section">
   <div class="section-label">
     <span class="section-num">06</span>
-    <h2 class="section-title">Style de Vie &amp; Passions</h2>
+    <h2 class="section-title" data-i18n="section.lifestyle">Style de Vie &amp; Passions</h2>
   </div>
   <div class="card-grid">
     <div class="card">
-      <div class="card-key">Ancrage &amp; Nature</div>
-      <div class="card-val">Balades en plein air · Nature, paysages et architecture · Fan des plantes d'intérieur</div>
+      <div class="card-key" data-i18n="lifestyle.nature.label">Ancrage &amp; Nature</div>
+      <div class="card-val" data-i18n="lifestyle.nature">Balades en plein air · Nature, paysages et architecture · Fan des plantes d'intérieur</div>
     </div>
     <div class="card">
-      <div class="card-key">Regard créatif</div>
-      <div class="card-val">Photographie</div>
+      <div class="card-key" data-i18n="lifestyle.creative.label">Regard créatif</div>
+      <div class="card-val" data-i18n="lifestyle.creative">Photographie</div>
     </div>
     <div class="card">
-      <div class="card-key">Divertissements &amp; Culture</div>
-      <div class="card-val">Nouvelles technologies · Gaming · Mangas · Jeux de société</div>
+      <div class="card-key" data-i18n="lifestyle.entertainment.label">Divertissements &amp; Culture</div>
+      <div class="card-val" data-i18n="lifestyle.entertainment">Nouvelles technologies · Gaming · Mangas · Jeux de société</div>
     </div>
     <div class="card">
-      <div class="card-key">Partage &amp; Sport</div>
-      <div class="card-val">Pour rester en bonne santé : Natation<br />Pour passer du temps avec mes amis : Foot, Basket, Padel</div>
+      <div class="card-key" data-i18n="lifestyle.sport.label">Partage &amp; Sport</div>
+      <div class="card-val"><span data-i18n="lifestyle.swimming">Pour rester en bonne santé : Natation</span><br /><span data-i18n="lifestyle.friends">Pour passer du temps avec mes amis : Foot, Basket, Padel</span></div>
     </div>
     <div class="card">
-      <div class="card-key">Horizons &amp; Voyages</div>
-      <div class="card-val">Emirats, Thaïlande, Malaisie, Pays-Bas, Italie, Allemagne, Turquie, Angleterre, Japon</div>
+      <div class="card-key" data-i18n="lifestyle.travel.label">Horizons &amp; Voyages</div>
+      <div class="card-val" data-i18n="lifestyle.travel">Emirats, Thaïlande, Malaisie, Pays-Bas, Italie, Allemagne, Turquie, Angleterre, Japon</div>
     </div>
   </div>
 </div>
@@ -196,28 +197,28 @@
 <div id="search" class="section">
   <div class="section-label">
     <span class="section-num">07</span>
-    <h2 class="section-title">Ce que je recherche</h2>
+    <h2 class="section-title" data-i18n="section.search">Ce que je recherche</h2>
   </div>
   <ul class="check-list">
-    <li>Âgée entre <span id="age-range-min">21</span> et <span id="age-range-max">27</span> ans</li>
-    <li>Croyante sincère, assidue dans la prière et s'acquittant de la zakat</li>
-    <li>Désireuse de continuer à apprendre la religion ensemble</li>
-    <li>Libre de poursuivre sa carrière professionnelle ou de se consacrer au foyer</li>
-    <li>Curieuse, compréhensive et tournée vers autrui</li>
-    <li>Reconnaissante au quotidien · Sait exprimer ses insatisfactions sans être dans la plainte constante</li>
-    <li>Projet de vie en foyer indépendant (location sans riba) en France</li>
-    <li>Désir profond de fonder une famille et de s'investir dans l'éducation des enfants</li>
+    <li><span data-i18n="search.age.prefix">Âgée entre </span><span id="age-range-min">21</span><span data-i18n="search.age.connector"> et </span><span id="age-range-max">27</span><span data-i18n="search.age.suffix"> ans</span></li>
+    <li data-i18n="search.faith">Croyante sincère, assidue dans la prière et s'acquittant de la zakat</li>
+    <li data-i18n="search.learning">Désireuse de continuer à apprendre la religion ensemble</li>
+    <li data-i18n="search.work">Libre de poursuivre sa carrière professionnelle ou de se consacrer au foyer</li>
+    <li data-i18n="search.character">Curieuse, compréhensive et tournée vers autrui</li>
+    <li data-i18n="search.gratitude">Reconnaissante au quotidien · Sait exprimer ses insatisfactions sans être dans la plainte constante</li>
+    <li data-i18n="search.home">Projet de vie en foyer indépendant (location sans riba) en France</li>
+    <li data-i18n="search.family">Désir profond de fonder une famille et de s'investir dans l'éducation des enfants</li>
   </ul>
 </div>
 
 <section class="contact-section" id="contact">
   <div class="contact-inner">
-    <h2 class="contact-title">Prendre contact</h2>
-    <p class="contact-sub">Pour toute demande, vous pouvez joindre la famille directement.</p>
+    <h2 class="contact-title" data-i18n="contact.title">Prendre contact</h2>
+    <p class="contact-sub" data-i18n="contact.subtitle">Pour toute demande, vous pouvez joindre la famille directement.</p>
     <div>
       <a class="contact-btn" href="tel:+33632182662">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        Contacter mon père
+        <span data-i18n="contact.father">Contacter mon père</span>
       </a>
       <a class="contact-btn whatsapp" href="https://wa.me/33632182662" target="_blank" rel="noopener">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.523 5.857L.057 23.882l6.194-1.45A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.684.863.93-3.594-.234-.368A9.817 9.817 0 012.182 12c0-5.422 4.396-9.818 9.818-9.818 5.422 0 9.818 4.396 9.818 9.818 0 5.422-4.396 9.818-9.818 9.818z"/></svg>
@@ -229,7 +230,7 @@
 
 <footer class="footer">
   <span class="footer-ayah">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا</span>
-  <p class="footer-trans">« Et parmi Ses signes : Il a créé pour vous, de vous-mêmes, des épouses pour que vous trouviez en elles la quiétude » — Ar-Rûm : 21</p>
+  <p class="footer-trans" data-i18n="footer.translation">« Et parmi Ses signes : Il a créé pour vous, de vous-mêmes, des épouses pour que vous trouviez en elles la quiétude » — Ar-Rûm : 21</p>
 </footer>
 
 <script src="script.js"></script>

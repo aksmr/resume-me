@@ -16,6 +16,11 @@
 
 html { scroll-behavior: smooth; }
 
+html:lang(bn) body,
+html:lang(bn) body * {
+  font-family: 'Noto Sans Bengali', 'Nirmala UI', sans-serif;
+}
+
 body {
   background: var(--cream);
   color: var(--text);
@@ -189,6 +194,33 @@ body::before {
   padding: clamp(2rem, 5vw, 5rem) clamp(2rem, 4vw, 4rem);
   position: relative;
   animation: fadeIn 1.2s ease 0.5s both;
+}
+
+.language-toggle {
+  position: absolute;
+  top: 1.25rem;
+  right: clamp(1.5rem, 4vw, 4rem);
+  z-index: 2;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--sand);
+  border-radius: 2rem;
+  background: transparent;
+  color: var(--bark);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.language-toggle:hover {
+  border-color: var(--bark);
+  background: var(--umber);
+  color: var(--white);
+}
+
+.language-toggle:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
 }
 
 .hero-right::before {
