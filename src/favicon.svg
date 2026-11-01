@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#4A3728"/>
+  <path d="M12 52V32a20 20 0 0 1 40 0v20" fill="none" stroke="#C09A5A" stroke-width="2"/>
+  <text x="32" y="43" fill="#FDFAF5" font-family="Georgia,serif" font-size="25" text-anchor="middle" letter-spacing="-2">AK</text>
+  <circle cx="32" cy="12" r="2" fill="#D4B47A"/>
+</svg>
