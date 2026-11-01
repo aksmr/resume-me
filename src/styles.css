@@ -69,6 +69,54 @@ body::before {
   outline-offset: -4px;
 }
 
+.hero-photo-controls {
+  position: absolute;
+  z-index: 12;
+  inset: 50% 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.hero-photo-control {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: rgba(46, 32, 24, 0.72);
+  color: var(--white);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.hero-photo-control:hover {
+  background: var(--bark);
+  transform: scale(1.05);
+}
+
+.hero-photo-control:focus-visible {
+  outline: 2px solid var(--gold-lt);
+  outline-offset: 3px;
+}
+
+.hero-photo-count {
+  position: absolute;
+  z-index: 11;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 2rem;
+  background: rgba(46, 32, 24, 0.72);
+  color: var(--white);
+  font-size: 0.75rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
 .hero-photo-hint {
   position: absolute;
   top: 1rem;

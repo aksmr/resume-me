@@ -14,9 +14,18 @@
 
 <section class="hero">
   <div class="hero-left">
-    <a class="hero-photo-link" href="img/halouf.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la photo en grand">
-      <img class="hero-photo" src="img\halouf.jpg" alt="ABUL KALAM Simon">
+    <a class="hero-photo-link" href="img/halouf_sous_costume.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la photo en grand">
+      <img class="hero-photo" src="img/halouf_sous_costume.jpg" alt="ABUL KALAM Simon">
     </a>
+    <div class="hero-photo-controls" role="group" aria-label="Commandes du diaporama">
+      <button class="hero-photo-control" id="photo-previous" type="button" aria-label="Photo précédente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <button class="hero-photo-control" id="photo-next" type="button" aria-label="Photo suivante">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+    </div>
+    <span class="hero-photo-count" id="photo-count" aria-live="polite">1 / 6</span>
     <span class="hero-photo-hint" aria-hidden="true">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4M11 8v6M8 11h6"/></svg>
       Agrandir
