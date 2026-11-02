@@ -119,6 +119,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'search.age.prefix': 'বয়স ',
     'search.age.connector': ' থেকে ',
     'search.age.suffix': ' বছর',
+    'search.france': 'ফ্রান্সে বড় হয়েছেন এবং পড়াশোনা করেছেন',
+    'search.education': 'ন্যূনতম শিক্ষাগত যোগ্যতা: BAC+3',
     'search.faith': 'আন্তরিক বিশ্বাসী, সালাত আদায়ে নিয়মিত এবং যাকাত প্রদানকারী',
     'search.learning': 'একসঙ্গে দ্বীনি জ্ঞান অর্জন চালিয়ে যেতে আগ্রহী',
     'search.work': 'নিজের পছন্দ ও ভারসাম্য অনুযায়ী পেশাজীবন চালিয়ে যেতে বা সংসারে সময় দিতে স্বাধীন',
